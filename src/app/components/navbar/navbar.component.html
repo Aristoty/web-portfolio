@@ -1,0 +1,37 @@
+<header class="bg-primary text-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="#" class="text-2xl font-bold">Aristotle</a>
+
+    <!-- Navigation Links -->
+    <nav>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-secondary">Home</a></li>
+        <li><a href="#about" class="hover:text-secondary">About</a></li>
+        <li><a href="#projects" class="hover:text-secondary">Projects</a></li>
+        <li><a href="#skills" class="hover:text-secondary">Skills</a></li>
+        <li><a href="#contact" class="hover:text-secondary">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Icon -->
+      <div class="md:hidden">
+        <button (click)="toggleMenu()" class="focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="isMenuOpen" class="md:hidden bg-primary text-white">
+    <ul class="space-y-4 p-4">
+      <li><a href="#home" class="block hover:text-secondary">Home</a></li>
+      <li><a href="#about" class="block hover:text-secondary">About</a></li>
+      <li><a href="#projects" class="block hover:text-secondary">Projects</a></li>
+      <li><a href="#skills" class="block hover:text-secondary">Skills</a></li>
+      <li><a href="#contact" class="block hover:text-secondary">Contact</a></li>
+    </ul>
+  </div>
+</header>

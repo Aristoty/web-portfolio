@@ -1,0 +1,12 @@
+header {
+  background-color: #1E3A8A; /* Couleur primaire */
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #3B82F6; /* Couleur secondaire */
+}

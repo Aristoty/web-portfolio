@@ -1,0 +1,14 @@
+/* Hero Section Styles */
+#home {
+  background-color: #f9fafb; /* Light gray background */
+}
+
+h1 span {
+  color: #1e3a8a; /* Primary color */
+}
+
+
+
+a:hover {
+  transform: scale(1.05);
+}
